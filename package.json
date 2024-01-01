@@ -1,0 +1,40 @@
+{
+  "name": "dom-traverse",
+  "version": "0.0.1",
+  "description": "DOM Traverse Utility",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:esm": "tsc -b tsconfig.esm.json && mv dist/index.js dist/index.mjs",
+    "build:cjs": "tsc -b tsconfig.cjs.json && mv dist/index.js dist/index.cjs",
+    "build": "tsc; npm run build:esm; npm run build:cjs;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangyx1998/dom-traverse.git"
+  },
+  "keywords": [
+    "dom",
+    "traverse",
+    "generator"
+  ],
+  "author": "Yuxuan Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangyx1998/dom-traverse/issues"
+  },
+  "homepage": "https://github.com/zhangyx1998/dom-traverse#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
+}

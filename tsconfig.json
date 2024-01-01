@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "target": "ESNext",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "declaration": true,
+        "emitDeclarationOnly": true
+    }
+}
